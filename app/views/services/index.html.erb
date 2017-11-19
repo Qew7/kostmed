@@ -1,0 +1,83 @@
+<style type="text/css">
+	li {
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    padding: 5px; /* Поля вокруг текста */
+    text-overflow: ellipsis;
+</style>
+            <div class="department-page-area">  
+                <div class="container">
+		<div class="title-area">
+		    <h2 class="title title-bar">Услуги</h2>
+		</div>
+                    <ul class="department-tab-title">
+                        <li class="active">
+                            <a href="#face" data-toggle="tab" aria-expanded="false">
+                                <i  aria-hidden="true"></i>
+                                <p>Косметология лица</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#trixology" data-toggle="tab" aria-expanded="false">
+                                <i -hidden="true"></i>
+                                <p>Трихология</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#body" data-toggle="tab" aria-expanded="false">
+                                <i -hidden="true"></i>
+                                <p>Коррекция фигуры</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#analyses" data-toggle="tab" aria-expanded="false">
+                                <i  aria-hidden="true"></i>
+                                <p>Анализы</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#other" data-toggle="tab" aria-expanded="false">
+                                <i  aria-hidden="true"></i>
+                                <p>Другие услуги</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>  
+                <div class="container tab-content">
+                    <div class="department-page-details tab-pane fade active in" id="face">
+                        <ul>
+                        	<% @face.each do |fac| %>
+                            <%== "<li><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i>" + link_to(fac.name, service_path(fac.id)) + "</li>" %>
+                            <% end %>
+                        </ul>
+                    </div> 
+                    <div class="department-page-details tab-pane fade" id="trixology">
+                        <ul>                            
+                        	<% @trixology.each do |fac| %>
+                            <%== "<li><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i>" + link_to(fac.name, service_path(fac.id)) + "</li>" %>
+                            <% end %>
+                        </ul>
+                    </div>
+                    <div class="department-page-details tab-pane fade" id="body">
+                        <ul>
+                        	<% @body.each do |fac| %>
+                            <%== "<li><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i>" + link_to(fac.name, service_path(fac.id)) + "</li>" %>
+                            <% end %>
+                        </ul>
+                    </div>
+                    <div class="department-page-details tab-pane fade" id="analyses">
+                        <ul>
+                        	<% @analyses.each do |fac| %>
+                            <%== "<li><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i>" + link_to(fac.name, service_path(fac.id)) + "</li>" %>
+                            <% end %>
+                        </ul>
+                    </div>
+                    <div class="department-page-details tab-pane fade" id="other">
+                        <ul>
+                        	<% @other.each do |fac| %>
+                            <%== "<li><i class=\"fa fa-plus-square\" aria-hidden=\"true\"></i>" + link_to(fac.name, service_path(fac.id)) + "</li>" %>
+                            <% end %>
+                        </ul>
+                    </div>
+                </div>  
+            </div> 

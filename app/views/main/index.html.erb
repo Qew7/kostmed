@@ -1,0 +1,365 @@
+<style type="text/css">
+.carousel.slide img {
+    width:100%;
+    height:auto;
+}
+img{
+	margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+</style>
+<%= video_tag "ролик.mp4", autoplay: 'autoplay', loop: 'loop' %>
+<div class="latest-news1-area">
+    <div class="container">
+        <div class="row">                       
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="news-box1">
+                    <div class="news-box-img">
+                    <%= image_tag "services-main/cosmetology.jpg", class: "img-responsive",  alt: "logo" %>
+                    </div> 
+                    <div class="news-box-content">
+                        <div class="news-box-inner-content">
+                            <h3>КОСМЕТОЛОГИЯ ЛИЦА</h3>
+                            <p>Применяются новейшие технологии в сфере омоложения лица</p><br/>
+                        <%= link_to "Подробнее", services_path, class: "btn-default-primary" %>
+                        </div>  
+                    </div>  
+                </div> 
+            </div> 
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="news-box1">
+                    <div class="news-box-img">
+                    <%= image_tag "services-main/trixology.jpg", class: "img-responsive",  alt: "logo" %>
+                    </div> 
+                    <div class="news-box-content">
+                        <div class="news-box-inner-content">
+                            <h3>ТРИХОЛОГИЯ</h3>
+                            <p>Современные методы лечения кожи головы и восстановления здоровья волос</p>
+                        <%= link_to "Подробнее", services_path, class: "btn-default-primary" %>
+                        </div>  
+                    </div>  
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="news-box1">
+                    <div class="news-box-img">
+                    <%= image_tag "services-main/correction.jpg", class: "img-responsive",  alt: "logo" %>
+                    </div> 
+                    <div class="news-box-content">
+                        <div class="news-box-inner-content">
+                            <h3>КОРРЕКЦИЯ ФИГУРЫ</h3>
+                            <p>Используем результативные методы и препараты для коррекции фигуры и ухода за телом</p>
+                        <%= link_to "Подробнее", services_path, class: "btn-default-primary" %>
+                        </div>  
+                    </div>  
+                </div> 
+            </div> 
+        </div>  
+    </div>  
+</div> 
+<div class="container">
+	<div class="title-area">
+	    <!-- <span class="sub-title">Awesome <span> Team</span></span> -->
+	    <h2 class="title title-bar">Интерьер</h2>
+	</div>
+<div class="row ">
+<div class="service-area bg-lightPrimary">
+ <div id="carousel-example-generic" class="carousel slide">
+  <!-- Indicators -->
+<!--   <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="14"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="15"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="16"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="17"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="18"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="19"></li>
+  </ol> -->
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+       <!-- Slide -->
+    <div class="item active">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/3f1d5d0fc60d2e38dd920c51010dd18a.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/4a30f71620cd527a422086c4d60166cb.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/4a6251607ffbbf3be96578df2cc8253f.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/9cc4c190b3f7fa80af348a6e2f13e2da.jpg", class: "img-responsive" %>
+                
+            </div>
+        </div>
+    </div>
+       <!-- Slide -->
+    <div class="item">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/9ce7ec4ac2e4ac180d21ce0add8e7d49.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/43c3f04b8b7004f8e33ca718c97e8a11.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/52c88023ce2ab8b27d11d18defb00ea7.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/687be8ed96cf5f5a40349efe445580b6.jpg", class: "img-responsive" %>
+                
+            </div>
+        </div>
+    </div>
+       <!-- Slide -->
+    <div class="item">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/739f54fe285f6c0d514a1a44d0f561e4.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/5679c2ba176e3adaeef1ce45068a86a6.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/9480fb1347491aad92047ce1406ab8d6.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/25398aaa44e621e73c4222eab3230030.jpg", class: "img-responsive" %>
+                
+            </div>
+        </div>
+    </div>
+       <!-- Slide -->
+    <div class="item">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/a9f8d3cb481158bfe19b4afa004852f5.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+			<%= image_tag "interier/ad62be2feaed7af9b383467f90dc1253.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+						<%= image_tag "interier/b13656cb48a9427a613cce4e90f1ebee.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+						<%= image_tag "interier/cff768a382d12255b2d7a6c58c95a911.jpg", class: "img-responsive" %>
+                
+            </div>
+        </div>
+    </div>
+       <!-- Slide -->
+    <div class="item">
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+						<%= image_tag "interier/b1ee3505286af157fc8961b70f6969d7.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+						<%= image_tag "interier/d8113eecefe1f7810621294e85aeb011.jpg", class: "img-responsive" %>
+                
+            </div>
+            <div class="col-sm-3 col-xs-6">
+						<%= image_tag "interier/d124386ad729c74bb8e2c44227083fc4.jpg", class: "img-responsive" %>
+
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+
+
+</div>
+</div>
+</div>
+</div>
+<div class=team1-area>
+<div class="container">
+	<div class="title-area">
+	    <!-- <span class="sub-title">Awesome <span> Team</span></span> -->
+	    <h2 class="title title-bar">Специалисты</h2>
+	</div>
+	<div class="row">
+		<div class="specialists">
+			
+			<% @specialists.each do |specialist| %>
+				<%==	"<div class=\"col-lg-4 col-md-4 col-sm-6 col-xs-6\"><div class=\"team-box1\">" + image_tag("specialists/" + specialist.photo, class: "img-responsive", style: "border-radius: 10px") + "<div class=\"team-content-wrapper\"><div style=\"clear: both; display: block; width: 80%; padding: 25px 0; background: #3b82ea; position: absolute; top: -70px; border-radius: 5px; text-align: center;  left: 0;    right: 0; margin: 0 auto; color: white\"><h4>" + specialist.name + "</h4><h5>" + specialist.position + "</h5></div></div></div></div>"%>
+			<% end %>
+
+		</div>
+	</div>
+</div>
+</div>
+<div class="banner1-area bg-lightAccent">
+<div class="container">
+	<div class="title-area">
+	    <!-- <span class="sub-title">Awesome <span> Team</span></span> -->
+	    <h2 class="title title-bar">Акции</h2>
+	</div>
+	<div class="row">
+		<div class="actions">
+
+			<% @actions.each do |action| %>
+				<%== "<div class=\"col-lg-4 col-md-6 col-sm-6 col-xs-6 price-table-box1\"><div class=\"price-table-box-inner\"><div class=\"price-table-inner-top\"> " + image_tag("actions/" + action.image, class: "img-responsive", style: "border-radius: 10px") + "</div>" + action.specific + "<br/><br/><a href=\"#\" class=\"btn-pricing\">Подробнее</a></div></div>"%>
+			<% end %>
+
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Latest News1 Area End Here -->
+<!-- Brand Area Start Here -->
+<div class="banner3-area bg-primary">
+    <div class="container">
+	<div class="title-area">
+	    <!-- <span class="sub-title">Awesome <span> Team</span></span> -->
+	    <h2 class="title title-bar">Партнёры</h2>
+	</div>
+        <div class="row">                         
+            <div class="partners"> 
+                <% @partners.each do |partner| %>
+				<%== "<div class=\"brand-area-box\"><div class=\"brand-area-box-inner\">" + image_tag("partners/" + partner.logo, class: "img-responsive", style: "border-radius: 10px") + "</div><h3>" + partner.name + "</h3><p>" + partner.description + "</p></div>"%>
+				<% end %>
+            </div>  
+        </div>  
+    </div>  
+</div>
+
+
+<div class="brand-area bg-lightPrimary">
+    <div class="container">
+	<div class="title-area">
+	    <!-- <span class="sub-title">Awesome <span> Team</span></span> -->
+	    <h2 class="title title-bar">Новости</h2>
+	</div>
+        <div class="row"> 
+        	<div class="news">
+                <% @news.each do |new| %>
+				<%== "<div class=\"brand-area-box\"><div class=\"brand-area-box-inner\">" + image_tag("news/" + new.image, class: "img-responsive", style: "border-radius: 10px") + "</div><h3>" + new.name + "</h3></div>"%>
+				<% end %>
+        		
+        	</div>
+        </div>
+    </div>
+</div>
+
+<div class="latest-news1-area">
+    <div class="container">
+	<div class="title-area">
+	    <!-- <span class="sub-title">Awesome <span> Team</span></span> -->
+	    <h2 class="title title-bar">Отзывы</h2>
+	</div>
+        <div class="row">
+        	<div class="feedback">
+                <% @feedback.each do |feedback| %>
+				<%== "<div class=\"brand-area-box col-xs-3 col-sm-3 col-md-3\" ><div class=\"brand-area-box-inner\"></div><h3>" + feedback.name + "</h3><p>" + feedback.text + "</p></div>"%>
+				<% end %>
+        		
+        	</div>
+        </div>
+    </div>
+</div>
+
+<div class="service-area bg-lightPrimary">
+    <div class="container">
+        <div class="row">
+        <h4 style="text-align:justify">
+        <br/>
+"Красота — это открытое рекомендательное письмо, заранее завоевывающее сердце", эти слова принадлежат известному философу Артуру Шопенгауэру.<br/><br/>
+А что в вашем понимании красота? Сияющая улыбка, чистая кожа без единого изъяна или же роскошные, длинные волосы? Что бы не являлось для вас основой внешней привлекательности, все это вы сможете получить практически здесь и сейчас, ведь возможности современной медицины открывают нам двери в мир красоты и здоровья. Внешняя привлекательность это основа уверенности в себе, которая в современном мире является олицетворением успеха. С каждым годом все больше людей обретают эту уверенность с помощью новейших технологий в сфере косметологии, (стоматологии, пластической хирургии). Увидеть в зеркале желаемые черты лица, избавиться от лишних килограммов, «помолодеть на несколько лет» все это и многое другое доступно вам уже сегодня. С нами ваш путь к идеалу станет короче и мы рады представить вам все наши виды услуг на высшем уровне!
+</h4>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+$('#carousel-example-generic').carousel({wrap: true});
+
+$(document).ready(function(){
+  $('.specialists').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  prevArrow: "hidden",
+  nextArrow: "hidden"
+  });
+  $('.actions').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  prevArrow: "hidden",
+  nextArrow: "hidden"
+  });
+  $('.partners').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  prevArrow: "hidden",
+  nextArrow: "hidden"
+  });
+  $('.news').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  prevArrow: "hidden",
+  nextArrow: "hidden"
+  });
+  $('.feedback').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  prevArrow: "hidden",
+  nextArrow: "hidden"
+  });
+});
+</script>

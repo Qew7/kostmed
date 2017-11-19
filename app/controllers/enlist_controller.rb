@@ -1,0 +1,2 @@
+class EnlistController < ApplicationController
+end

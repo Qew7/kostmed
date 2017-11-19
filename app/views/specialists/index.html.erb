@@ -1,0 +1,21 @@
+<style type="text/css">
+	div.centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<div class="brand-area bg-lightPrimary">
+	<div class="container">
+		<div class="title-area">
+		    <h2 class="title title-bar">Наши специалисты</h2>
+		</div>
+		<div class="row">
+			<div class="specialists">
+				<% @specialists.each do |specialist| %>
+					<%==	"<div class=\"col-xs-4\"><div class=\"team-box1\">" + image_tag("specialists/" + specialist.photo, class: "img-responsive", style: "border-radius: 10px") + "<a href=\"" + specialist_path(specialist) + "\"><div class=\"team-content-wrapper\"><div style=\"clear: both; display: block; width: 80%; padding: 25px 0; background: #3b82ea; position: absolute; top: -70px; border-radius: 5px; text-align: center;  left: 0;    right: 0; margin: 0 auto; color: white\"><h4>" + specialist.name + "</h4><h5>" + specialist.position + "</h5></div></div></div></div>"%>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
