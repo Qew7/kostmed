@@ -10,8 +10,20 @@ img{
     right: 0;
     bottom: 0;
 }
+video {
+  margin-top: -97px;
+  z-index: -99
+}
+header {
+  position: relative;
+  z-index: 999
+}
+.header-bottom-area {
+  background-color: white;
+  opacity: 0.60;
+}
 </style>
-<%= video_tag "/movie.mp4", autoplay: 'autoplay', loop: 'loop' %>
+<%= video_tag "movie.mp4", autoplay: 'autoplay', loop: 'loop',  width: "100%", poster: image_path("main-pic.jpg") %>
 <div class="latest-news1-area">
     <div class="container">
         <div class="row">                       
