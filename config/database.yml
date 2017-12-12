@@ -5,9 +5,11 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  user: root
+  password:
 
 development:
   <<: *default
@@ -22,4 +24,4 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: estmed
