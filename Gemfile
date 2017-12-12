@@ -34,7 +34,7 @@ gem "jquery-slick-rails"
 
 group :development, :test do
 # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  #gem 'sqlite3'
 # Use Puma as the app server
   gem 'puma', '~> 3.7'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -54,7 +54,8 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  gem 'mysql2', '>= 0.3.18', '< 0.5'
+  gem 'unicorn'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
