@@ -26,6 +26,6 @@ test:
 production:
   <<: *default
   user: estmed
-  password: <!QRmng\&_b)U8@W
+  password: QRmngbU8W
   database: estmed_production
   socket: /var/run/mysqld/mysqld.sock
