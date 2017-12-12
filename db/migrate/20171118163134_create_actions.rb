@@ -4,7 +4,7 @@ class CreateActions < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :specific
       t.string :date      
-      t.string :description
+      t.text :description
       t.string :image
 
       t.timestamps

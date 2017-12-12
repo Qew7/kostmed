@@ -4,7 +4,7 @@ class CreateSpecialists < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :position
       t.string :photo
-      t.string :description
+      t.text :description
 
       t.timestamps
     end
