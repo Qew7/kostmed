@@ -10,7 +10,8 @@ default: &default
   timeout: 5000
   user: root
   password:
-
+  socket: /tmp/mysql.sock
+  
 development:
   <<: *default
   database: estmed_development
@@ -25,3 +26,4 @@ test:
 production:
   <<: *default
   database: estmed_production
+  socket: /var/run/mysqld/mysqld.sock
