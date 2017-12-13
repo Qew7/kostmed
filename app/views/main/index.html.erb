@@ -20,10 +20,60 @@ header {
 }
 .header-bottom-area {
   background-color: white;
-  opacity: 0.60;
+  /*opacity: 0.60;*/
 }
 </style>
-<%= video_tag "movie.mp4", autoplay: 'autoplay', loop: 'loop',  width: "100%", poster: image_path("main-pic.jpg") %>
+<div class="slider1-area">
+                <div class="bend niceties preview-1">
+                    <div id="ensign-nivoslider-3" class="slides nivoSlider">   
+                        <img src=<%= image_path "slider/slide1-1.jpg" %> alt="slider" title="#slider-direction-1" style="display: none; width: 1905px;">
+                        <img src=<%= image_path "slider/slide1-2.jpg" %> alt="slider" title="#slider-direction-2" style="display: none; width: 1905px;">
+                    <img class="nivo-main-image" src=<%= image_path "slider/slide1-1.jpg" %> style="display: inline; width: 1905px; height: auto;"><div class="nivo-caption" style="display: block;">
+                        <div class="slider-content s-tb slide-1">
+                            <div class="title-container s-tb-c">                                
+                                <div class="container">                                
+                                    <h1 class="title1">Центр<span> Эстетической Медицины</span></h1>
+                                    <p class="slider-para1">Красоту, как и драгоценность, нужно держать в надлежащем виде и мы </br> как истинные ювелиры, профессионалы своего дела, стоим на страже красоты</p>
+                                    <div class="slider-btn-area">
+                                    <%= link_to "О нас", about_path %>
+                                    <%= link_to "Записаться", enlist_path %>                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="nivo-directionNav"><a class="nivo-prevNav">Prev</a><a class="nivo-nextNav">Next</a></div></div><div class="nivo-controlNav nivo-thumbs-enabled"></div> -->
+                    <div id="slider-direction-1" class="t-cn slider-direction">
+                        <div class="slider-content s-tb slide-1">
+                            <div class="title-container s-tb-c">                                
+                                <div class="container">                                
+                                    <h1 class="title1">We care<span> For you</span></h1>
+                                    <p class="slider-para1">Love, care and help make a difference in this world. Even a small they<br> becomes a part of a huge change. Even a small contribu.</p>
+                                    <div class="slider-btn-area">
+                                    <%= link_to "О нас <i class=\"fa fa-arrow-right\" aria-hidden=\"true\">", about_path %>
+                                    <%= link_to "Записаться <i class=\"fa fa-arrow-right\" aria-hidden=\"true\">", enlist_path %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slider-direction-2" class="t-cn slider-direction">
+                        <div class="slider-content s-tb slide-2">
+                             <div class="container title-container s-tb-c">
+                                <div class="container">                                
+                                    <h1 class="title1">We care<span> For you</span></h1>
+                                    <p class="slider-para1">Love, care and help make a difference in this world. Even a small they<br> becomes a part of a huge change. Even a small contribu.</p>
+                                    <div class="slider-btn-area">
+                                        <a href="#">Explore Now<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                        <a href="#">Booking Now</a>                                  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+<!-- <%= video_tag "movie.mp4", autoplay: 'autoplay', loop: 'loop',  width: "100%", poster: image_path("main-pic.jpg") %> -->
 <div class="latest-news1-area">
     <div class="container">
         <div class="row">                       
